@@ -1,10 +1,10 @@
 {
   "expoServerNgrokUrl": "https://n7-9ht.jaspreet379.routine-tracker-nativeapp.exp.direct",
   "packagerNgrokUrl": "https://packager.n7-9ht.jaspreet379.routine-tracker-nativeapp.exp.direct",
-  "ngrokPid": 8176,
+  "ngrokPid": 13656,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 12172,
+  "packagerPid": 4988,
   "webpackServerPort": null,
   "devToolsPort": 19002
 }

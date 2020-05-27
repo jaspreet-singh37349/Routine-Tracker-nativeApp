@@ -5,6 +5,8 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import reducer from './reducers'
 import History from './components/History'
+import EntryDetail from './components/EntryDetail'
+import {createStackNavigator} from "react-navigation-stack";
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs'
 import {createAppContainer} from 'react-navigation'
 import { purple, white, red } from './utils/colors'
@@ -36,7 +38,7 @@ const Tabs = createMaterialTopTabNavigator({
   },
 }, {
   navigationOptions: {
-    header: null
+    headerShown: false
   },
   tabBarOptions: {
     activeTintColor: Platform.OS === 'ios' ? purple : white,
@@ -54,7 +56,22 @@ const Tabs = createMaterialTopTabNavigator({
   }
 })
 
-const AppContainer = createAppContainer(Tabs)
+const MainNavigator = createStackNavigator({
+  Home: {
+    screen: Tabs,
+  },
+  EntryDetail: {
+    screen: EntryDetail,
+    navigationOptions: {
+      headerTintColor: white,
+      headerStyle: {
+        backgroundColor: purple,
+      }
+    }
+  }
+})
+
+const AppContainer = createAppContainer(MainNavigator)
 
 export default class App extends React.Component {
   render() {
