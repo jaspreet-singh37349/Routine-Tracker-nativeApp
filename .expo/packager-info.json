@@ -1,8 +1,8 @@
 {
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
-  "expoServerPort": null,
+  "expoServerNgrokUrl": "https://n7-9ht.jaspreet379.routine-tracker-nativeapp.exp.direct",
+  "packagerNgrokUrl": "https://packager.n7-9ht.jaspreet379.routine-tracker-nativeapp.exp.direct",
+  "ngrokPid": 9236,
+  "expoServerPort": 19000,
   "packagerPort": null,
   "packagerPid": null,
   "webpackServerPort": null,

@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import reducer from './reducers'
 import History from './components/History'
 import EntryDetail from './components/EntryDetail'
+import Live from './components/Live'
 import {createStackNavigator} from "react-navigation-stack";
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs'
 import {createAppContainer} from 'react-navigation'
@@ -36,6 +37,13 @@ const Tabs = createMaterialTopTabNavigator({
       tabBarIcon: ({ tintColor }) => <FontAwesome name='plus-square' size={30} color={tintColor} />
     },
   },
+  Live: {
+    screen: Live,
+    navigationOptions: {
+      tabBarLabel: 'Live',
+      tabBarIcon: ({ tintColor }) => <Ionicons name='ios-speedometer' size={30} color={tintColor} />
+    }
+  }
 }, {
   navigationOptions: {
     headerShown: false
